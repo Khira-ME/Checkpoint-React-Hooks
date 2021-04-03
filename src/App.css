@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+
+body{
+  background-color: #282c34;
+  background-image: url(https://images.cdn1.stockunlimited.net/preview1300/cinema-background-with-movie-objects_1823387.jpg);
+}
+
+
+
+/************MOVIE CARD ******************/
+.movie-container{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.mekymovies {
+  text-align: center;
+  font-family: 'Papyrus', fantasy;
+  font-weight: 600;
+  font-size: 40px;
+  color: gold;
+}
+.movie {
+  background-color: #ffffff9d;
+  border-radius: 3px;
+  box-shadow: 3px 3px 5px rgba(231, 177, 28, 0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 290px;
+
+}
+.movie img{
+  max-width: 90%;
+}
+.movie-info{
+  padding: 1rem;
+}
+.movie-info h2{
+  font-size: 25px;
+  margin-bottom: 4px;
+}
+.movie-description{
+  background-color: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 3px -3px 5px rgba(0, 0, 0, 0.1);
+  overflow: auto;
+  max-height: 100%;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-description{
+  transform: translateY(0%);
+}
+.movie-description p {
+  font-size: 15px;
+}
+
+/************** HEADER ******************/
+.header{
+  background-color: #11121688;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.header input{
+  width: 180px;
+  height: 35px;
+  text-align: center;
+  padding: 4px 1px;
+}
+
+/************* ADD+MODAL ****************/
+.addBtn{
+  color: rgba(0, 0, 0, 0.95);
+  text-align: center;
+  font-size: 14px;
+}
+.pop-up-modal input{
+  width: 240px;
+  height: 32px;
+  text-align: center;
+  padding: 4px 1px;
+  margin: 16px 0;
+}
+.pop-up-modal label{
+  font-weight: 500;
+  font-size: 16px;
+}
+.pop-up-modal textarea{
+  text-align: center;
+  padding: 4px 1px;
+  margin: 16px 0;
+}
