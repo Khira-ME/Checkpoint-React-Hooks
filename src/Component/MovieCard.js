@@ -1,8 +1,11 @@
 import { Rate } from 'antd';
 import 'antd/dist/antd.css';
+import { Link} from 'react-router-dom' ;
 
 export const MovieCard = ({item}) => {
     return (
+        <> 
+        <Link to={`/movie/${item.title}`}>
         <div className='movie'>
             <img src={item.posterUrl} alt={item.title}></img>
             <div className='movie-info'>
@@ -14,5 +17,7 @@ export const MovieCard = ({item}) => {
                 <p>{item.description}</p>
             </div>
         </div>
+        </Link>
+        </>
     );
 }
